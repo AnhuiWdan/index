@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <!-- css文件-->
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+  <!-- js文件  js jquery库 boot框架.js 兼容.js-->
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--cc:ie6-->
+  <!--[if lte IE 8]>
+  <script src="js/html5shiv.min.js"></script>
+
+  <![endif]-->
+</head>
+<body>
+<div class="header">
+  <div class="header-top">
+    <div class="container bar">
+      <a href="#" class="img-small">
+        <img src="img/58b7dc7c48762.jpg" alt="">
+      </a>
+    </div>
+    <i data-role="close" class="glyphicon glyphicon-remove close"></i>
+  </div>
+  <div class="public-top">
+    <div class="container">
+      <div class="user-entry">
+        您好，欢迎来到
+        <a href="#" title="首页" alt="首页">盼达网</a>
+        <span>
+            [<a href="#">登录</a>]
+          </span>
+        <span>
+            [<a href="#">注册</a>]
+        </span>
+        <span style="float: right;">
+            <!--<a href="#">
+              <img src="img/weibo.png" alt="">
+              &nbsp;&nbsp;进去微博
+            </a>-->
+            <span class="head-app2">
+              <a href="javascript: void(0);">
+                <img src="img/wechat.png" alt="">
+                &nbsp;&nbsp;微信
+              </a>
+              <div class="download-app">
+                <img src="img/weisin_qr.jpg" alt="">
+              </div>
+            </span>
+
+          </span>
+      </div>
+
+      <div class="quick-menu">
+
+        <dl class="">
+          <dt><a href="#">我的订单</a><i></i></dt>
+          <dd>
+            <ul>
+              <li>
+                <a href="#">待付款订单</a>
+              </li>
+              <li>
+                <a href="#">待确认收货</a>
+              </li>
+              <li>
+                <a href="#">待评价交易</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="">
+          <dt>
+            <a href="#">我的收藏</a>
+            <i></i>
+          </dt>
+          <dd>
+            <ul>
+              <li><a href="#">商品收藏</a></li>
+              <li><a href="#">店铺收藏</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt><a href="#">修改资料</a><i></i>
+          </dt>
+          <dd>
+            <ul>
+              <li><a href="#">账户信息</a></li>
+              <li><a href="#">账户安全</a></li>
+              <li><a href="#">收货地址</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <div class="link-consumer">
+          <a href="#">消费者告知书</a>
+        </div>
+        <dl>
+          <dt>客户服务<i></i></dt>
+          <dd>
+            <ul>
+              <li><a href="#">帮助中心</a></li>
+              <li><a href="#">售后服务</a></li>
+              <li><a href="#">客服中心</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+      $(".header-top i").on('click', function () {
+        $(this).parents('.header-top').fadeOut();
+      })
+      $(".head-app2 a").hover(function () {
+        $(this).next(".download-app").show();
+
+      }, function () {
+        $(this).next(".download-app").hide();
+      });
+      $(".head-app").hover(function () {
+        $(this).children(".download-app-mobile").show();
+      }, function () {
+        $(this).children(".download-app-mobile").hide();
+      });
+      $(".quick-menu dl ").hover(function () {
+        $(this).children('dd').show();
+
+      }, function () {
+        $(this).children('dd').hide();
+      })
+    })
+
+  </script>
+  <div class="header-wrap">
+    <header class="public-head-layout container">
+      <h1 class="site-logo">
+        <a href="#">
+          <!--<img src="img/logo_header_pandakorea_201610.gif" alt="pandakorea">-->
+          <img src="img/newLogo.png" alt="" style="margin-top: 22px;margin-left: 4px;">
+        </a>
+      </h1>
+      <div class="head-banner" style="width:136px;padding-left:49px;padding-right:15px;margin-top: 15px;">
+      </div>
+
+      <div class="head-search-bar" style="margin-left:10px;">
+        <form action="#" method="get" class="search-form" id="top_search_form">
+          <input name="act" id="search_act" value="search" type="hidden">
+          <input name="keyword" id="keyword" type="text" class="input-text tips ui-autocomplete-input" value=""
+                 maxlength="60" x-webkit-speech="" lang="zh-CN" onwebkitspeechchange="foo()" placeholder="请输入您要搜索的商品关键字"
+                 x-webkit-grammar="builtin:search" autocomplete="off">
+          <input type="submit" id="button" value="搜索" class="input-submit">
+        </form>
+        <div class="keyword">热门搜索：
+          <ul>
+            <li>
+              <a href="#">口红</a>
+            </li>
+            <li>
+              <a href="#">bb霜</a>
+            </li>
+            <li>
+              <a href="#">焕白</a>
+            </li>
+            <li>
+              <a href="#">补水</a>
+            </li>
+            <li>
+              <a href="#">毛孔</a>
+            </li>
+            <li>
+              <a href="#">坚果</a>
+            </li>
+            <li>
+              <a href="#">拉面</a>
+            </li>
+            <li>
+              <a href="#">JAYJUN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="head-user-menu">
+        <!--<dl class="my-mall">
+          <dt><span class="ico"></span>我的商城<i class="arrow"></i></dt>
+          <dd>
+            <div class="sub-title">
+              <h4></h4>
+              <a href="#" class="arrow">我的用户中心<i></i></a>
+            </div>
+            <div class="user-centent-menu">
+              <ul>
+                <li>
+                  <a href="#">站内消息(<span>0</span>)</a>
+                </li>
+                <li>
+                  <a href="#">我的订单<i></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">咨询回复(<span id="member_consult">0</span>)</a>
+                </li>
+                <li>
+                  <a href="#" class="arrow">我的收藏<i></i></a>
+                </li>
+                <li>
+                  <a href="#">代金券(<span id="member_voucher">0</span>)</a>
+                </li>
+                <li>
+                  <a href="#" class="arrow">我的积分<i></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="browse-history">
+              <div class="part-title">
+                <h4>最近浏览的商品</h4>
+                <span style="float:right;">
+                  <a href="#">全部浏览历史</a>
+                </span>
+              </div>
+              <ul>
+                <li class="no-goods">暂无商品</li>
+              </ul>
+            </div>
+          </dd>
+        </dl>-->
+        <!--<dl class="my-cart">
+          <dt><span class="ico"></span>购物车结算<i class="arrow"></i></dt>
+          <dd>
+            <div class="sub-title">
+              <h4>最新加入的商品</h4>
+            </div>
+            <div class="incart-goods-box">
+              <div class="incart-goods">
+                <div class="no-order">
+                  <span>您的购物车中暂无商品，赶快选择心爱的商品吧！</span>
+                </div>
+              </div>
+            </div>
+            <div class="checkout">
+              <span class="total-price">共<i>0</i>种商品</span>
+              <a href="#" class="btn-cart">结算购物车中的商品</a>
+            </div>
+          </dd>
+        </dl>-->
+        <div class="my-cart fr" id="hd-my-cart">
+          <p class="c-n fl">我的购物车</p>
+          <p class="c-num fl quantity">(<span class="count cart_quantity" id="cart_quantity">0</span>) <i
+            class="i-c oh"></i></p>
+          <div id="show_minicart" class="sub-panel u-fn-cart u-mn-cart">
+            <div class="empty-c">
+              <span class="ma"><i class="c-i oh"></i>购物车中没有商品哟！</span>
+            </div>
+            <script>
+              $(".cart_quantity").text(''); // 购物车的总数量
+            </script>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <nav class="public-nav-layout">
+    <div class="container">
+      <div class="all-category">
+
+        <div class="title">
+          <div style="float:left;"><h3 style="margin-left:20px;"><a href="#" target="_blank">所有商品分类</a></h3></div>
+          <div id="show_menu" class="show_menu"><i class="arrow"></i></div>
+        </div>
+        <div class="category">
+          <ul class="menu">
+            <li cat_id="9000" class="odd">
+              <div class="class" style="border-top:1px solid #f1f2f2;">
+                <span class="ico"><img src="img/category-pic-9000.jpg"></span>
+                <h4 style="margin-top:-2px;"><a href="#" target="_blank">美容彩妆</a></h4>
+                <span style="float:right;margin-right:-10px;"><img src="img/icon_09_web.png"></span>
+              </div>
+              <div class="sub-class masonry" cat_menu_id="9000" hover="1" style=" position: absolute; height: 456px;">
+                <div class="subc" style="width:150px;">
+
+                  <dl style="width: 130px; top: 0px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">爽肤水/乳液</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 32px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">精华</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 64px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">面霜/眼霜</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 96px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">防晒</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 128px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">洁面/卸妆</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 160px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">面膜护理</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 192px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">底妆</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 224px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">唇部护理</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 256px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">眼部彩妆</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 288px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">男性护理</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 320px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">身体护理</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 352px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">香水</a></h3>
+                    </dt>
+                  </dl>
+                </div>
+
+
+              </div>
+
+            </li>
+
+            <li cat_id="9100" class="even">
+              <div class="class" style="border-top:1px solid #f1f2f2;">
+                <span class="ico"><img src="img/category-pic-9100.jpg"></span>
+                <h4 style="margin-top:-2px;"><a href="#" target="_blank">个人洗护</a></h4>
+                <span style="float:right;margin-right:-10px;"><img
+                  src="img/icon_09_web.png"></span>
+              </div>
+
+              <div class="sub-class masonry" cat_menu_id="9100" hover="1" style=" position: absolute; height: 456px;">
+                <div class="subc" style="width:150px;">
+
+                  <dl style="width: 130px; top: 0px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">美发护发</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 32px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">发型</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 64px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">私密护理</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 96px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">肥皂/口腔</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 128px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">洗涤</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 160px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">其他</a></h3>
+                    </dt>
+                  </dl>
+                </div>
+              </div>
+            </li>
+
+            <li cat_id="9200" class="odd">
+              <div class="class" style="border-top:1px solid #f1f2f2;">
+                <span class="ico"><img src="img/category-pic-9200.jpg"></span>
+                <h4 style="margin-top:-2px;"><a href="#" target="_blank">一般食品</a></h4>
+                <span style="float:right;margin-right:-10px;"><img src="img/icon_09_web.png"></span>
+              </div>
+
+              <div class="sub-class masonry" cat_menu_id="9200" hover="1" style=" position: absolute; height: 456px;">
+                <div class="subc" style="width:150px;">
+                  <dl style="width: 130px; top: 0px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">小吃</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 32px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">海苔/鱼干</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 64px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">茶/饮料/咖啡</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 96px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">拉面</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 128px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">速食</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 160px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">罐头</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 192px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">其他食品</a></h3>
+                    </dt>
+                  </dl>
+                </div>
+
+
+              </div>
+
+            </li>
+
+            <li cat_id="9300" class="even">
+              <div class="class" style="border-top:1px solid #f1f2f2;">
+                <span class="ico"><img src="img/category-pic-9300.jpg"></span>
+                <h4 style="margin-top:-2px;"><a href="#" target="_blank">红参/保健食品</a></h4>
+                <span style="float:right;margin-right:-10px;"><img src="img/icon_09_web.png"></span>
+              </div>
+
+              <div class="sub-class masonry" cat_menu_id="9300" hover="1" style=" position: absolute; height: 456px;">
+                <div class="subc" style="width:150px;">
+
+                  <dl style="width: 130px; top: 0px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">红参</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 32px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">减肥食品</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 64px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">维他命/矿物质</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 96px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">果蔬汁</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 128px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">营养补充食品</a></h3>
+                    </dt>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li cat_id="9400" class="odd">
+              <div class="class" style="border-top:1px solid #f1f2f2;">
+                <span class="ico"><img src="img/category-pic-9400.jpg"></span>
+                <h4 style="margin-top:-2px;"><a href="#" target="_blank">母婴儿童</a></h4>
+                <span style="float:right;margin-right:-10px;"><img src="img/icon_09_web.png"></span>
+              </div>
+
+              <div class="sub-class masonry" cat_menu_id="9400" hover="1" style=" position: absolute; height: 456px;">
+                <div class="subc" style="width:150px;">
+
+                  <dl style="width: 130px; top: 0px; left: 0px;" clas#target="_blank">洗护</a></h3></dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 32px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">奶粉</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 64px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">儿童食品</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 96px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">喂养用品</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 128px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">玩具</a></h3>
+                    </dt>
+                  </dl>
+
+                  <dl style="width: 130px; top: 160px; left: 0px;" class="masonry-brick">
+                    <dt>
+                    <h3 style="width:130px;"><a href="#" target="_blank">卫生用品/纸尿裤</a></h3>
+                    </dt>
+                  </dl>
+                </div>
+
+
+              </div>
+
+            </li>
+
+          </ul>
+          <div>
+            <a href="#" target="_blank" title=""><img style="width:210px;height:266px" border="0"
+                                                      src="img/05398866959456914.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <ul class="site-menu">
+        <li><a href="#" target="_blank">BEST50</a></li>
+        <li>
+          <a href="#" target="_blank"> 品牌</a>
+        </li>
+        <li>
+          <a href="#" target="_blank"> 活动</a>
+        </li>
+        <li><a href="#" target="_blank"> 韩国正品/半价</a></li>
+        <li><a target="_blank" href="#">新闻</a></li>
+        <li><a target="_blank" href="#">批发咨询</a></li>
+      </ul>
+      <div style="float:right;height:40px;overflow:hidden;">
+        <a href="#" target="_blank"
+           style="text-decoration: none;vertical-align: top">
+          <img src="img/ems-icon_161107.png" art="免费 299元 送货">
+        </a>
+        <a href="#" target="_blank" style="text-decoration: none;vertical-align: top">
+          <img src="img/app-qr-down.png" style="margin-top:5px;">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+</div>
+
+<div class="banner">
+  <div class="main" style="margin: 0 auto;position: relative">
+    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
+        <li data-target="#carousel-example-generic" data-slide-to="1">2</li>
+        <li data-target="#carousel-example-generic" data-slide-to="2">3</li>
+        <li data-target="#carousel-example-generic" data-slide-to="3">4</li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background-color: rgb(243, 230, 238);">
+          <img src="img/web-101-101-2.jpg" alt="...">
+        </div>
+        <div class="item" style="background-color: rgb(185, 234, 245);">
+          <img src="img/web-101-101-1.jpg" alt="...">
+        </div>
+        <div class="item" style="background-color: rgb(164, 222, 249);">
+          <img src="img/web-101-101-3.jpg" alt="...">
+        </div>
+        <div class="item" style="background-color: rgb(244, 236, 209);">
+          <img src="img/web-101-101-4.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+    <div class="banner-right">
+      <a href="#"><img src="img/05346104618164038.jpg" alt=""></a>
+      <a href="#"><img src="img/05355692262532393.jpg" alt=""></a>
+    </div>
+  </div>
+</div>
+<!--浮动导航条-->
+<div id="box">
+  <ul>
+    <li>
+      <a class="word" href="javascript:;" style="display:block" data-id="0">大货频道</a></li>
+    <li>
+      <a class="word" href="javascript:;" data-id="1">精品推荐</a>
+    </li>
+    <li>
+      <a class="word" href="javascript:;" data-id="2">电脑数码</a>
+    </li>
+    <li>
+      <a class="word" href="javascript:;" data-id="3">电脑数码</a>
+    </li>
+    <li class="last">
+      <a class="word" href="javascript:;" data-id="4">电脑数码</a>
+    </li>
+    <!--<li>
+      <a class="word" href="javascript:;" data-id="5">运动</a>
+    </li>
+    <li>
+      <a class="word" href="javascript:;" data-id="6">居家</a>
+    </li>
+    <li>
+      <a class="word" href="javascript:;" data-id="7">母婴</a>
+    </li>
+    <li>
+      <a class="word" href="javascript:;" data-id="8">食品</a>
+    </li>
+    <li>
+      <a class="word" href="javascript:;" data-id="9">图书</a>
+    </li>
+    <li class="last">
+      <a class="word" href="javascript:;" data-id="10">服务</a>
+    </li>-->
+  </ul>
+</div>
+
+
+<div id="main">
+  <!--秒杀-->
+  <div class="J_f J_sk need_ani sk" id="seckill" style="padding-top: 10px;">
+    <div class="grid_c1 box sk_inner container">
+      <div class="box_hd clearfix">
+        <div class="box_hd_col1"><i class="box_hd_dec"></i><i class="box_hd_icon"></i>
+          <h3 class="box_tit">限时促销</h3>
+          <a href="#" target="_blank" class="box_subtit">总有你想不到的低价
+            <i class="box_subtit_arrow"></i>
+          </a>
+        </div>
+        <div class="box_hd_col2">
+          <div class="J_sk_cd sk_cd">
+            <span class="sk_cd_tip">当前场次</span>
+            <div class="sk_cd_main J_sk_cd_main">
+              <div class="cd clearfix">
+                <div class="cd_item cd_hour">
+                  <span class="cd_item_txt" id="t_hour">02</span>
+                </div>
+                <div class="cd_split">
+                  <i class="cd_split_dot cd_split_top"></i>
+                  <i class="cd_split_dot cd_split_bottom"></i>
+                </div>
+                <div class="cd_item cd_minute">
+                  <span class="cd_item_txt" id="t_minute">48</span>
+                </div>
+                <div class="cd_split">
+                  <i class="cd_split_dot cd_split_top"></i>
+                  <i class="cd_split_dot cd_split_bottom"></i>
+                </div>
+                <div class="cd_item cd_second">
+                  <span class="cd_item_txt" id="t_second">04</span>
+                </div>
+              </div>
+            </div>
+            <span class="sk_cd_tip">后结束抢购</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box_bd clearfix">
+        <div class="J_sk_list_wrapper sk_list_wrapper">
+          <ul class="J_sk_list sk_list clearfix">
+            <li class="J_sk_item sk_item sk_item_1">
+              <div class="sk_item_pic">
+                <div class="sk_item_tag"><b class="mod_ver"></b><span class="sk_item_tag_txt">超级秒</span></div>
+                <a href="#" target="_blank" class="sk_item_pic_lk">
+                  <img src="img/587ee8d9N52cc9610.jpg" class="sk_item_img">
+                  <p class="sk_item_name">毓婷 早早孕 验孕 测孕 优备孕 优孕 验孕棒 检测试条1条*3盒</p>
+                </a>
+                <span class="sk_item_shadow"></span>
+              </div>
+              <p class="sk_item_price">
+                <span class="mod_price sk_item_price_new">
+                  <i>¥</i>
+                  <span>1.00</span>
+                </span>
+                <span class="mod_price sk_item_price_origin">
+                  <i>¥</i>
+                  <del>21.00</del>
+                </span>
+              </p>
+            </li>
+            <li class="J_sk_item sk_item sk_item_1">
+              <div class="sk_item_pic">
+                <div class="sk_item_tag"><b class="mod_ver"></b><span class="sk_item_tag_txt">超级秒</span></div>
+                <a href="#" target="_blank" class="sk_item_pic_lk">
+                  <img src="img/587ee8d9N52cc9610.jpg" class="sk_item_img">
+                  <p class="sk_item_name">毓婷 早早孕 验孕 测孕 优备孕 优孕 验孕棒 检测试条1条*3盒</p>
+                </a>
+                <span class="sk_item_shadow"></span>
+              </div>
+              <p class="sk_item_price">
+                <span class="mod_price sk_item_price_new">
+                  <i>¥</i>
+                  <span>1.00</span>
+                </span>
+                <span class="mod_price sk_item_price_origin">
+                  <i>¥</i>
+                  <del>21.00</del>
+                </span>
+              </p>
+            </li>
+            <li class="J_sk_item sk_item sk_item_1">
+              <div class="sk_item_pic">
+                <div class="sk_item_tag"><b class="mod_ver"></b><span class="sk_item_tag_txt">超级秒</span></div>
+                <a href="#" target="_blank" class="sk_item_pic_lk">
+                  <img src="img/587ee8d9N52cc9610.jpg" class="sk_item_img">
+                  <p class="sk_item_name">毓婷 早早孕 验孕 测孕 优备孕 优孕 验孕棒 检测试条1条*3盒</p>
+                </a>
+                <span class="sk_item_shadow"></span>
+              </div>
+              <p class="sk_item_price">
+                <span class="mod_price sk_item_price_new">
+                  <i>¥</i>
+                  <span>1.00</span>
+                </span>
+                <span class="mod_price sk_item_price_origin">
+                  <i>¥</i>
+                  <del>21.00</del>
+                </span>
+              </p>
+            </li>
+            <li class="J_sk_item sk_item sk_item_1">
+              <div class="sk_item_pic">
+                <div class="sk_item_tag"><b class="mod_ver"></b><span class="sk_item_tag_txt">超级秒</span></div>
+                <a href="#" target="_blank" class="sk_item_pic_lk">
+                  <img src="img/587ee8d9N52cc9610.jpg" class="sk_item_img">
+                  <p class="sk_item_name">毓婷 早早孕 验孕 测孕 优备孕 优孕 验孕棒 检测试条1条*3盒</p>
+                </a>
+                <span class="sk_item_shadow"></span>
+              </div>
+              <p class="sk_item_price">
+                <span class="mod_price sk_item_price_new">
+                  <i>¥</i>
+                  <span>1.00</span>
+                </span>
+                <span class="mod_price sk_item_price_origin">
+                  <i>¥</i>
+                  <del>21.00</del>
+                </span>
+              </p>
+            </li>
+            <li class="J_sk_item sk_item sk_item_1">
+              <div class="sk_item_pic">
+                <div class="sk_item_tag"><b class="mod_ver"></b><span class="sk_item_tag_txt">超级秒</span></div>
+                <a href="#" target="_blank" class="sk_item_pic_lk">
+                  <img src="img/587ee8d9N52cc9610.jpg" class="sk_item_img">
+                  <p class="sk_item_name">毓婷 早早孕 验孕 测孕 优备孕 优孕 验孕棒 检测试条1条*3盒</p>
+                </a>
+                <span class="sk_item_shadow"></span>
+              </div>
+              <p class="sk_item_price">
+                <span class="mod_price sk_item_price_new">
+                  <i>¥</i>
+                  <span>1.00</span>
+                </span>
+                <span class="mod_price sk_item_price_origin">
+                  <i>¥</i>
+                  <del>21.00</del>
+                </span>
+              </p>
+            </li>
+
+          </ul>
+          <div class="sk_split"></div>
+        </div>
+        <a href="#" target="_blank" class="sk_special">
+          <img src="img/58be7e8dN6d42a867.jpg" class="sk_special_pic">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--大货频道-->
+  <div id="item-0" class="J_f J_fbt need_ani fbt">
+    <div class="grid_c1 fbt_inner clearfix">
+      <div class="box find fbt_col1 J_find">
+        <div class="box_hd clearfix"><i class="box_hd_arrow"></i><i class="box_hd_dec"></i>
+          <h3 class="box_tit">发现好货</h3><a href="//fxhh.jd.com/index.html" target="_blank" class="box_subtit">发现品质生活<i
+            class="box_subtit_arrow"></i></a></div>
+        <div class="box_bd clearfix">
+          <div class="slider ">
+            <ul class="slider-main">
+              <li class="slider-panel">
+                <img alt="" src="img/lb1.jpg">
+              </li>
+              <li class="slider-panel">
+                <img alt="" src="img/lb2.jpg">
+              </li>
+              <li class="slider-panel">
+                <img alt="" src="img/lb3.jpg">
+              </li>
+            </ul>
+            <div class="slider-extra">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box brand fbt_col2 J_find">
+        <div class="box_hd clearfix"><i class="box_hd_arrow"></i><i class="box_hd_dec"></i>
+          <h3 class="box_tit">品牌头条</h3><a href="//brands.jd.com/" target="_blank" class="box_subtit"
+                                          clstag="h|keycount|2016|15a">大牌资讯全掌握<i class="box_subtit_arrow"></i></a></div>
+        <div class="box_bd clearfix">
+          <div class="slider1">
+            <ul class="slider-main1">
+              <li class="slider-panel1">
+                <img alt="" src="img/lb1.jpg">
+              </li>
+              <li class="slider-panel1">
+                <img alt="" src="img/lb2.jpg">
+              </li>
+              <li class="slider-panel1">
+                <img alt="" src="img/lb3.jpg">
+              </li>
+            </ul>
+            <div class="slider-extra1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box top fbt_col3 J_top">
+        <div class="box_hd clearfix"><i class="box_hd_arrow"></i><i class="box_hd_dec"></i>
+          <h3 class="box_tit">排行榜</h3><a href="//top.jd.com" target="_blank" class="box_subtit"
+                                         clstag="h|keycount|2016|16a">热卖爆款集结<i class="box_subtit_arrow"></i></a></div>
+        <div class="box_bd top_tab J_top_tab">
+          <div class="slider2">
+            <ul class="slider-main2">
+              <li class="slider-panel2">
+                <img alt="" src="img/lb1.jpg">
+              </li>
+              <li class="slider-panel2">
+                <img alt="" src="img/lb2.jpg">
+              </li>
+              <li class="slider-panel2">
+                <img alt="" src="img/lb3.jpg">
+              </li>
+            </ul>
+            <div class="slider-extra2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--精品推荐-->
+  <div id="item-1" class="tj">
+    <div class="container">
+      <h3>为您推荐</h3>
+      <div class="tj_contain">
+        <a href="#">
+          <img src="img/570f544d1b1e6.jpg" alt="" class="bigtj">
+          <div class="txt">
+            <img src="img/txt.png" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="tjimg">
+        <a href="#"><img src="img/tj.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <!--楼层-->
+  <div id="item-2" class="J_f J_f_lift need_ani chn">
+    <div class="grid_c1 chn_inner chn_c1 clearfix"><!-- 循环类目入口模块 -->
+      <div class="J_chn_col chn_col chn_col1">
+        <div class="pt pt_computer">
+          <div class="pt_hd pt_hd_qrcode"><h3 class="pt_tit">电脑数码</h3>
+            <div class="pt_tags">
+              <a class="pt_tags_item" target="_blank" href="#">IT精选</a>
+              <a class="pt_tags_item" target="_blank" href="#">电脑馆</a>
+              <a class="pt_tags_item" target="_blank" href="#">游戏极品</a>
+              <a class="pt_tags_item" target="_blank" href="#">装机大师</a>
+              <a class="pt_tags_item" target="_blank" href="#">职场焕新</a>
+              <a class="pt_tags_item" target="_blank" href="#">女神频道</a>
+              <a class="pt_tags_item" target="_blank" href="#">虚拟现实</a>
+              <a class="pt_tags_item" target="_blank" href="#">二合一平板</a>
+              <a class="pt_tags_item" target="_blank" href="#">电子教育</a>
+              <a class="pt_tags_item" target="_blank" href="#">摄影社区</a>
+              <a class="pt_tags_item" target="_blank" href="#">全球智选</a>
+              <a class="pt_tags_item" target="_blank" href="#">照片冲印</a>
+            </div>
+          </div>
+          <div class="pt_bd_wrapper">
+            <div class="bigpic">
+              <a href="#">
+                <img src="img/wmz.jpg" alt="">
+                <div class="jieshao">
+                  <h3>38女装主会场</h3>
+                  <span>女装主会场</span>
+                </div>
+              </a>
+            </div>
+            <div class="pt_bi pt_bi_4">
+              <span class="pt_bi_split pt_bi_split_h"></span>
+              <span class="pt_bi_split pt_bi_split_v"></span>
+              <span class="pt_bi_split pt_bi_split_v2"></span>
+              <span class="pt_bi_split pt_bi_split_v3"></span>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑馆</p>
+                <p class="pt_bi_promo">抢200元品类劵</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">外设装备</p>
+                <p class="pt_bi_promo">新品享优惠</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑配件</p>
+                <p class="pt_bi_promo">定金1元抵500！</p>
+
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">办公生活</p>
+                <p class="pt_bi_promo">逆天颜值 口袋投影</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑馆</p>
+                <p class="pt_bi_promo">抢200元品类劵</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑馆</p>
+                <p class="pt_bi_promo">抢200元品类劵</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+            </div>
+            <div class="pull-right shangbiao">
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--楼层-->
+  <div id="item-3" class="J_f J_f_lift need_ani chn">
+
+    <div class="grid_c1 chn_inner chn_c1 clearfix"><!-- 循环类目入口模块 -->
+      <div class="J_chn_col chn_col chn_col1">
+        <div class="pt pt_computer">
+          <div class="pt_hd pt_hd_qrcode"><h3 class="pt_tit">电脑数码</h3>
+            <div class="pt_tags">
+              <a class="pt_tags_item" target="_blank" href="#">IT精选</a>
+              <a class="pt_tags_item" target="_blank" href="#">电脑馆</a>
+              <a class="pt_tags_item" target="_blank" href="#">游戏极品</a>
+              <a class="pt_tags_item" target="_blank" href="#">装机大师</a>
+              <a class="pt_tags_item" target="_blank" href="#">职场焕新</a>
+              <a class="pt_tags_item" target="_blank" href="#">女神频道</a>
+              <a class="pt_tags_item" target="_blank" href="#">虚拟现实</a>
+              <a class="pt_tags_item" target="_blank" href="#">二合一平板</a>
+              <a class="pt_tags_item" target="_blank" href="#">电子教育</a>
+              <a class="pt_tags_item" target="_blank" href="#">摄影社区</a>
+              <a class="pt_tags_item" target="_blank" href="#">全球智选</a>
+              <a class="pt_tags_item" target="_blank" href="#">照片冲印</a>
+            </div>
+          </div>
+          <div class="pt_bd_wrapper">
+            <div class="bigpic">
+              <a href="#">
+                <img src="img/wmz.jpg" alt="">
+                <div class="jieshao">
+                  <h3>38女装主会场</h3>
+                  <span>女装主会场</span>
+                </div>
+              </a>
+            </div>
+            <div class="pt_bi pt_bi_4">
+              <span class="pt_bi_split pt_bi_split_h"></span>
+              <span class="pt_bi_split pt_bi_split_v"></span>
+              <span class="pt_bi_split pt_bi_split_v2"></span>
+              <span class="pt_bi_split pt_bi_split_v3"></span>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑馆</p>
+                <p class="pt_bi_promo">抢200元品类劵</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">外设装备</p>
+                <p class="pt_bi_promo">新品享优惠</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑配件</p>
+                <p class="pt_bi_promo">定金1元抵500！</p>
+
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">办公生活</p>
+                <p class="pt_bi_promo">逆天颜值 口袋投影</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑馆</p>
+                <p class="pt_bi_promo">抢200元品类劵</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑馆</p>
+                <p class="pt_bi_promo">抢200元品类劵</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+            </div>
+            <div class="pull-right shangbiao">
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--楼层-->
+  <div id="item-4" class="J_f J_f_lift need_ani chn">
+    <div class="grid_c1 chn_inner chn_c1 clearfix">
+      <div class="J_chn_col chn_col chn_col1">
+        <div class="pt pt_computer">
+          <div class="pt_hd pt_hd_qrcode"><h3 class="pt_tit">电脑数码</h3>
+            <div class="pt_tags">
+              <a class="pt_tags_item" target="_blank" href="#">IT精选</a>
+              <a class="pt_tags_item" target="_blank" href="#">电脑馆</a>
+              <a class="pt_tags_item" target="_blank" href="#">游戏极品</a>
+              <a class="pt_tags_item" target="_blank" href="#">装机大师</a>
+              <a class="pt_tags_item" target="_blank" href="#">职场焕新</a>
+              <a class="pt_tags_item" target="_blank" href="#">女神频道</a>
+              <a class="pt_tags_item" target="_blank" href="#">虚拟现实</a>
+              <a class="pt_tags_item" target="_blank" href="#">二合一平板</a>
+              <a class="pt_tags_item" target="_blank" href="#">电子教育</a>
+              <a class="pt_tags_item" target="_blank" href="#">摄影社区</a>
+              <a class="pt_tags_item" target="_blank" href="#">全球智选</a>
+              <a class="pt_tags_item" target="_blank" href="#">照片冲印</a>
+            </div>
+          </div>
+          <div class="pt_bd_wrapper">
+            <div class="bigpic">
+              <a href="#">
+                <img src="img/wmz.jpg" alt="">
+                <div class="jieshao">
+                  <h3>38女装主会场</h3>
+                  <span>女装主会场</span>
+                </div>
+              </a>
+            </div>
+            <div class="pt_bi pt_bi_4">
+              <span class="pt_bi_split pt_bi_split_h"></span>
+              <span class="pt_bi_split pt_bi_split_v"></span>
+              <span class="pt_bi_split pt_bi_split_v2"></span>
+              <span class="pt_bi_split pt_bi_split_v3"></span>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑馆</p>
+                <p class="pt_bi_promo">抢200元品类劵</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">外设装备</p>
+                <p class="pt_bi_promo">新品享优惠</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑配件</p>
+                <p class="pt_bi_promo">定金1元抵500！</p>
+
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">办公生活</p>
+                <p class="pt_bi_promo">逆天颜值 口袋投影</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑馆</p>
+                <p class="pt_bi_promo">抢200元品类劵</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+              <a href="#" class="pt_bi_item" target="_blank">
+                <p class="pt_bi_tit">电脑馆</p>
+                <p class="pt_bi_promo">抢200元品类劵</p>
+                <img src="img/58b7f97aN220bfd04.jpg" class="pt_bi_img">
+              </a>
+            </div>
+            <div class="pull-right shangbiao">
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+              <a href="#" class="sb_pic">
+                <img src="img/04862999090569060_sm.jpg" alt="" width="180" height="55">
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--footer-cate-->
+<div class="footer-cate" style="width: 100%; height:60px;background-color: #363636">
+  <table style="width: 1200px;margin: auto;">
+    <tbody>
+    <tr style="height: 58px">
+      <td></td>
+      <td style="width: 299px">
+        <a href="#">
+          <img src="img/foot_category1.jpg"></a>
+      </td>
+      <td style="width: 299px">
+        <a href="#">
+          <img src="img/foot_category3.jpg"></a>
+      </td>
+      <td style="width: 299px"><a href="#">
+        <img src="img/foot_category4.jpg"></a>
+      </td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div id="faq" style="background-color: #f5f5f5;margin:0px;">
+  <div class="wrapper" style="background-color: #f5f5f5">
+    <ul>
+      <li>
+        <dl class="s1">
+          <dt>
+            帮助中心
+          </dt>
+          <dd><i></i><a href="#" title="盼达网APP下载"> 盼达网APP下载 </a></dd>
+          <dd><i></i><a href="#" title="消费者告知书"> 消费者告知书 </a></dd>
+          <dd><i></i><a href="#" title="忘记密码"> 忘记密码 </a></dd>
+          <dd><i></i><a href="#" title="查看已购买商品"> 查看已购买商品 </a></dd>
+          <dd><i></i><a href="#" title="如何注册成为会员"> 如何注册成为会员 </a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="s2">
+          <dt>
+            셀러센터
+          </dt>
+          <dd><i></i><a href="#" title="입점관리"> 입점관리 </a></dd>
+          <dd><i></i><a href="#" title="상품올리기"> 상품올리기 </a></dd>
+          <dd><i></i><a href="#" title="입점신청"> 입점신청 </a></dd>
+          <dd><i></i><a href="#" title="추천패키지 추가"> 추천패키지 추가 </a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="s3">
+          <dt>
+            支付方式
+          </dt>
+          <dd><i></i><a href="#" title="支付协议"> 支付协议 </a></dd>
+          <dd><i></i><a href="#" title="如何注册支付宝"> 如何注册支付宝 </a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="s4">
+          <dt>
+            售后服务
+          </dt>
+          <dd><i></i><a href="#" title="退款政策"> 退款政策 </a></dd>
+          <dd><i></i><a href="#" title="联系卖家"> 联系卖家 </a></dd>
+          <dd><i></i><a href="#" title="退换货流程"> 退换货流程 </a></dd>
+          <dd><i></i><a href="#" title="售后服务"> 售后服务 </a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="s5">
+          <dt>
+            客服中心
+          </dt>
+          <dd><i></i><a href="#" title="春节放假通知"> 春节放假通知 </a></dd>
+          <dd><i></i><a href="#" title="FAQ"> FAQ </a></dd>
+          <dd><i></i><a href="#" title="服务协议"> 服务协议 </a></dd>
+          <dd><i></i><a href="#" title="会员修改个人资料"> 会员修改个人资料 </a></dd>
+          <dd><i></i><a href="#" title="会员修改密码"> 会员修改密码 </a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="s6">
+          <dt>
+            关于我们
+          </dt>
+          <dd><i></i><a href="#" title="韩国加盟店简介"> 韩国加盟店简介 </a></dd>
+          <dd><i></i><a href="#" title="中国加盟店简介"> 中国加盟店简介 </a></dd>
+          <dd><i></i><a href="#" title="春节放假通知"> 春节放假通知 </a></dd>
+          <dd><i></i><a href="#" title="第1话：中国人的海淘生活"> 第1话：中国人的海淘生活 </a></dd>
+          <dd><i></i><a href="#" title="公司介绍"> 公司介绍 </a></dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+</div>
+<div style="height: 30px;"></div>
+<!--footer-->
+<div id="footer" class="wrapper">
+  <div class="seller_Center_foot">
+    <div class="red_foot_style">
+      <a href="#" target="_blank" class="logo_awards_link">中国公司：深圳杰佩斯电子商务有限公司 | 地址：中国广东省深圳市宝安区西乡街道万象新天B座808-810</a>
+      <br/>
+      <span style="font-weight: bold; font-size: 15px">在线客服  服务时间：周一至周五  9:00-18：00|服务电话：0755-23284107</span>
+      <br>
+      <br>
+      Copyright © 201682line.cn 版权所有|粤ICP备16097242号
+    </div>
+    <div style="height: 45px;"></div>
+
+
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var length,
+      currentIndex = 0,
+      interval,
+      hasStarted = false, //是否已经开始轮播
+      t = 3000; //轮播时间间隔
+    length = $('.slider-panel').length;
+
+    //将除了第一张图片隐藏
+    $('.slider-panel:not(:first)').hide();
+    //将第一个slider-item设为激活状态
+    $('.slider-item:first').addClass('slider-item-selected');
+    //隐藏向前、向后翻按钮
+    $('.slider-page').hide();
+
+    //鼠标上悬时显示向前、向后翻按钮,停止滑动，鼠标离开时隐藏向前、向后翻按钮，开始滑动
+    $('.slider-panel, .slider-pre, .slider-next').hover(function () {
+      stop();
+      $('.slider-page').show();
+    }, function () {
+      $('.slider-page').hide();
+      start();
+    });
+
+    $('.slider-item').hover(function (e) {
+      stop();
+      var preIndex = $(".slider-item").filter(".slider-item-selected").index();
+      currentIndex = $(this).index();
+      play(preIndex, currentIndex);
+    }, function () {
+      start();
+    });
+
+    $('.slider-pre').unbind('click');
+    $('.slider-pre').bind('click', function () {
+      pre();
+    });
+    $('.slider-next').unbind('click');
+    $('.slider-next').bind('click', function () {
+      next();
+    });
+
+    /**
+     * 向前翻页
+     */
+    function pre() {
+      var preIndex = currentIndex;
+      currentIndex = (--currentIndex + length) % length;
+      play(preIndex, currentIndex);
+    }
+
+    /**
+     * 向后翻页
+     */
+    function next() {
+      var preIndex = currentIndex;
+      currentIndex = ++currentIndex % length;
+      play(preIndex, currentIndex);
+    }
+
+    /**
+     * 从preIndex页翻到currentIndex页
+     * preIndex 整数，翻页的起始页
+     * currentIndex 整数，翻到的那页
+     */
+    function play(preIndex, currentIndex) {
+      $('.slider-panel').eq(preIndex).fadeOut(500)
+        .parent().children().eq(currentIndex).fadeIn(1000);
+      $('.slider-item').removeClass('slider-item-selected');
+      $('.slider-item').eq(currentIndex).addClass('slider-item-selected');
+    }
+
+    /**
+     * 开始轮播
+     */
+    function start() {
+      if (!hasStarted) {
+        hasStarted = true;
+        interval = setInterval(next, t);
+      }
+    }
+
+    /**
+     * 停止轮播
+     */
+    function stop() {
+      clearInterval(interval);
+      hasStarted = false;
+    }
+
+    //开始轮播
+    start();
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var length,
+      currentIndex = 0,
+      interval,
+      hasStarted = false, //是否已经开始轮播
+      t = 3000; //轮播时间间隔
+    length = $('.slider-panel1').length;
+
+    //将除了第一张图片隐藏
+    $('.slider-panel1:not(:first)').hide();
+    //将第一个slider-item设为激活状态
+    $('.slider-item1:first').addClass('slider-item-selected');
+    //隐藏向前、向后翻按钮
+    $('.slider-page1').hide();
+
+    //鼠标上悬时显示向前、向后翻按钮,停止滑动，鼠标离开时隐藏向前、向后翻按钮，开始滑动
+    $('.slider-panel1, .slider-pre1, .slider-next1').hover(function () {
+      stop();
+      $('.slider-page1').show();
+    }, function () {
+      $('.slider-page1').hide();
+      start();
+    });
+
+    $('.slider-item1').hover(function (e) {
+      stop();
+      var preIndex = $(".slider-item1").filter(".slider-item-selected").index();
+      currentIndex = $(this).index();
+      play(preIndex, currentIndex);
+    }, function () {
+      start();
+    });
+
+    $('.slider-pre1').unbind('click');
+    $('.slider-pre1').bind('click', function () {
+      pre();
+    });
+    $('.slider-next1').unbind('click');
+    $('.slider-next1').bind('click', function () {
+      next();
+    });
+
+    /**
+     * 向前翻页
+     */
+    function pre() {
+      var preIndex = currentIndex;
+      currentIndex = (--currentIndex + length) % length;
+      play(preIndex, currentIndex);
+    }
+
+    /**
+     * 向后翻页
+     */
+    function next() {
+      var preIndex = currentIndex;
+      currentIndex = ++currentIndex % length;
+      play(preIndex, currentIndex);
+    }
+
+    /**
+     * 从preIndex页翻到currentIndex页
+     * preIndex 整数，翻页的起始页
+     * currentIndex 整数，翻到的那页
+     */
+    function play(preIndex, currentIndex) {
+      $('.slider-panel1').eq(preIndex).fadeOut(500)
+        .parent().children().eq(currentIndex).fadeIn(1000);
+      $('.slider-item1').removeClass('slider-item-selected');
+      $('.slider-item1').eq(currentIndex).addClass('slider-item-selected');
+    }
+
+    /**
+     * 开始轮播
+     */
+    function start() {
+      if (!hasStarted) {
+        hasStarted = true;
+        interval = setInterval(next, t);
+      }
+    }
+
+    /**
+     * 停止轮播
+     */
+    function stop() {
+      clearInterval(interval);
+      hasStarted = false;
+    }
+
+    //开始轮播
+    start();
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var length,
+      currentIndex = 0,
+      interval,
+      hasStarted = false, //是否已经开始轮播
+      t = 3000; //轮播时间间隔
+    length = $('.slider-panel2').length;
+
+    //将除了第一张图片隐藏
+    $('.slider-panel2:not(:first)').hide();
+    //将第一个slider-item设为激活状态
+    $('.slider-item2:first').addClass('slider-item-selected');
+    //隐藏向前、向后翻按钮
+    $('.slider-page2').hide();
+
+    //鼠标上悬时显示向前、向后翻按钮,停止滑动，鼠标离开时隐藏向前、向后翻按钮，开始滑动
+    $('.slider-panel2, .slider-pre2, .slider-next2').hover(function () {
+      stop();
+      $('.slider-page2').show();
+    }, function () {
+      $('.slider-page2').hide();
+      start();
+    });
+
+    $('.slider-item2').hover(function (e) {
+      stop();
+      var preIndex = $(".slider-item2").filter(".slider-item-selected").index();
+      currentIndex = $(this).index();
+      play(preIndex, currentIndex);
+    }, function () {
+      start();
+    });
+
+    $('.slider-pre2').unbind('click');
+    $('.slider-pre2').bind('click', function () {
+      pre();
+    });
+    $('.slider-next2').unbind('click');
+    $('.slider-next2').bind('click', function () {
+      next();
+    });
+
+    /**
+     * 向前翻页
+     */
+    function pre() {
+      var preIndex = currentIndex;
+      currentIndex = (--currentIndex + length) % length;
+      play(preIndex, currentIndex);
+    }
+
+    /**
+     * 向后翻页
+     */
+    function next() {
+      var preIndex = currentIndex;
+      currentIndex = ++currentIndex % length;
+      play(preIndex, currentIndex);
+    }
+
+    /**
+     * 从preIndex页翻到currentIndex页
+     * preIndex 整数，翻页的起始页
+     * currentIndex 整数，翻到的那页
+     */
+    function play(preIndex, currentIndex) {
+      $('.slider-panel2').eq(preIndex).fadeOut(500)
+        .parent().children().eq(currentIndex).fadeIn(1000);
+      $('.slider-item2').removeClass('slider-item-selected');
+      $('.slider-item2').eq(currentIndex).addClass('slider-item-selected');
+    }
+
+    /**
+     * 开始轮播
+     */
+    function start() {
+      if (!hasStarted) {
+        hasStarted = true;
+        interval = setInterval(next, t);
+      }
+    }
+
+    /**
+     * 停止轮播
+     */
+    function stop() {
+      clearInterval(interval);
+      hasStarted = false;
+    }
+
+    //开始轮播
+    start();
+  });
+</script>
+<script>
+  var limit_time;
+  if (window.name == "") {//查看是否已有记录的时间
+    limit_time = 6000;//设置结束时间，单位秒
+  } else {
+    limit_time = window.name;
+  }
+  function timeDown() {
+    if (limit_time >= 0) {
+      /*划分出时分秒*/
+      var hour = Math.floor(limit_time / 60 / 60 % 24);
+      var minutes = Math.floor(limit_time / 60 % 60);
+      var seconds = Math.floor(limit_time % 60);
+      /*写到页面中*/
+      $("#t_hour").html("0" + hour);
+      $("#t_minute").html(minutes);
+      $("#t_second").html(seconds);
+
+
+      if (limit_time == 10) {
+        alert("提醒，还有10秒结束");
+      }
+      --limit_time;
+      window.name = limit_time;//记录当前时间。
+    }
+    else {
+      clearInterval(timer);
+      alert("时间到！活动结束");
+    }
+  }
+  timer = setInterval("timeDown()", 1000);//设置定时器，1秒钟执行一次timeDown()函数；
+
+</script>
+<!--浮动导航-->
+<script>
+  $(function () {
+    // @ 给窗口加滚动条事件
+    $(window).scroll(function () {
+      // 获得窗口滚动上去的距离
+      var ling = $(document).scrollTop();
+      // 在标题栏显示滚动的距离
+//      document.title = ling;
+      // 如果滚动距离大于1040的时候让滚动框出来
+      if (ling > 1040) {
+        $('#box').show();
+      }
+      if (1040 < ling && ling < 1535) {
+        // 让第一层的数字隐藏，文字显示，让其他兄弟元素的li数字显示，文字隐藏
+        $('#box ul li').eq(0).find('.word').css('background-color', 'red');
+        $('#box ul li').eq(0).siblings('li').find('.word').css({'background': '#5e5e5e'});
+      } else if (ling < 1996) {
+        $('#box ul li').eq(1).find('.word').css('background-color', 'red');
+        $('#box ul li').eq(1).siblings('li').find('.word').css({'background': '#5e5e5e'});
+      } else if (ling < 2546) {
+        $('#box ul li').eq(2).find('.word').css('background-color', 'red');
+        $('#box ul li').eq(2).siblings('li').find('.word').css({'background': '#5e5e5e'});
+      } else if (ling < 3100) {
+        $('#box ul li').eq(3).find('.word').css('background-color', 'red');
+        $('#box ul li').eq(3).siblings('li').find('.word').css({'background': '#5e5e5e'});
+      } else if (ling < 3564) {
+        $('#box ul li').eq(4).find('.word').css('background-color', 'red');
+        $('#box ul li').eq(4).siblings('li').find('.word').css({'background': '#5e5e5e'});
+      }
+
+      if (ling > 3564 || ling < 1040) {
+
+        $('#box').hide();
+      }
+
+    })
+    //楼层点击事件 定位到楼层
+    $(".word").click(function () {
+      var id = $(this).attr("data-id");
+      var h = $("#item-" + id).offset().top;
+      $('body,html').animate({scrollTop: h}, 200);
+    });
+  })
+
+  $(function () {
+    $('#box ul li').hover(function () {
+      $(this).find('.word').css({
+        'background': 'red'
+      });
+    }, function () {
+      $(this).find('.word').css({
+        'background': '#5e5e5e'
+      });
+    })
+  })
+</script>
+</body>
+</html>
